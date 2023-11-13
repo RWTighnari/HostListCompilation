@@ -82,16 +82,8 @@
 @@||murena.com^$important
 @@||murena.io^$important
 !
-! vpsor
-@@||vpsor.cn^
-!
-! 123pan
-@@||www.123pan.com^
-@@||statics.123pan.com^
-!
-! Bing(parental CATEGORY_BLACKLISTED)
-!@@||www.bing.com^
-!@@||cn.bing.com^
+! IOS AppStore-download apps
+@@||iosapps.itunes.apple.com^
 !
 ! HUAWEI/HONOR connectivity check
 @@||connectivitycheck.platform.hicloud.com^
@@ -102,8 +94,16 @@
 ! hihonorcloud
 !@@||account-drcn.platform.hihonorcloud.com^
 !
-! IOS AppStore-download apps
-@@||iosapps.itunes.apple.com^
+! vpsor
+@@||vpsor.cn^
+!
+! Blog
+@@||blog.clarkqwq.top^
+@@||www.skira.top^
+!
+! 123pan
+@@||www.123pan.com^
+@@||statics.123pan.com^
 !
 ! renminribao app
 @@||peopleapp.com^
@@ -124,7 +124,7 @@
 !@@||360.cn^
 !
 ! flatpak install flathub com.baidu.NetDisk
-@@||issuepcdn.baidupcs.com^
+!@@||issuepcdn.baidupcs.com^
 !
 ! 重返未来：1999
 @@||account.sl916.com^

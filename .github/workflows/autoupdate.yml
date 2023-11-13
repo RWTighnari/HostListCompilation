@@ -32,26 +32,6 @@ jobs:
       - name: Install hostlist-compiler
         run: npm i -g @adguard/hostlist-compiler
 
-      - name: Download Rules
-        run: |
-          cd sources/AdGuardHome
-          wget https://raw.githubusercontent.com/hacamer/AGHRules/main/regex.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt
-          wget https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt
-          wget https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
-          wget https://o0.pages.dev/Xtra/adblock.txt
-          cd ../../
-
       # Build a configurable blocklist from multiple sources (AdGuard Home)
       - name: Build a blocklist
         run: |
