@@ -5,7 +5,7 @@
   "license": "AGPL-3.0",
   "sources": [
     {
-      "name": "hacamer/AGHRules/main/regex.txt",
+      "name": "HC REGEX LIST",
       "source": "https://raw.githubusercontent.com/hacamer/AGHRules/main/regex.txt",
       "type": "adblock"
     },
