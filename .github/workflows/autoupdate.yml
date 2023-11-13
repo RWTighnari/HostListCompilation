@@ -54,7 +54,10 @@ jobs:
 
       # Build a configurable blocklist from multiple sources (AdGuard Home)
       - name: Build a blocklist
-        run: hostlist-compiler -c ./configuration/AdGuardHome/configuration.json -o ./output/AdGuardHome/output.txt
+        run: |
+          cd sources/AdGuardHome
+          hostlist-compiler -c ../../configuration/AdGuardHome/configuration.json -o ../../output/AdGuardHome/output.txt
+          cd ../../
 
       # Push a commit using the built-in token
       - name: Push

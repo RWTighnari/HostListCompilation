@@ -1,14 +1,13 @@
 {
     "name": "Host List Compilation",
-    "description": " A radical filter compiled from multiple sources",
+    "description": "A radical filter compiled from multiple sources",
     "homepage": "https://github.com/RWTighnari/HostListCompilation",
     "license": "AGPL-3.0",
     "sources": [
       {
         "name": "Local rules",
         "source": ["regex.txt", "PersonalRules.txt", "filter_1.txt", "filter_2.txt", "filter_7.txt", "filter_8.txt", "filter_9.txt", "filter_11.txt", "filter_12.txt", "filter_23.txt", "filter_27.txt", "filter_29.txt", "filter_30.txt", "filter_33.txt", "adblocker", "adblock.txt"],
-        "type": "adblock",
-        "transformations": ["RemoveComments", "Compress"]
+        "type": "adblock"
       }
     ],
     "transformations": ["RemoveComments", "Compress", "RemoveModifiers", "Validate", "Deduplicate", "RemoveEmptyLines", "TrimLines", "InsertFinalNewLine"]
