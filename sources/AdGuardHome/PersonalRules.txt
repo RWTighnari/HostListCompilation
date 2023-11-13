@@ -1,0 +1,148 @@
+! Title : Personal AGH Rules
+! Update : 2023/10
+! 编辑规则：相同域名不空行，不同域名空1行，不同“Category”空2行。
+! “Category”顺序：1.REGEX 2.Block 3.Purify 4.Fix
+!
+! Upstream DNS servers備份：
+! https://dns11.quad9.net/dns-query
+! https://family.adguard-dns.com/dns-query
+! tls://family.adguard-dns.com
+! quic://family.adguard-dns.com
+! sdns://AQMAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ
+! Bootstrap DNS servers:
+! 9.9.9.10
+! 149.112.112.10
+! 2620:fe::10
+! 2620:fe::fe:10
+! Fix Google Public DNS
+@@||dns.google^$important
+!
+!
+! Category: REGEX
+! kill all domains that contain "click/dns"
+/click/
+||dns.*^$dnsrewrite=NXDOMAIN
+||doh.*^$dnsrewrite=NXDOMAIN
+||dot.*^$dnsrewrite=NXDOMAIN
+||httpdns.*^$dnsrewrite=NXDOMAIN
+||httpsdns.*^$dnsrewrite=NXDOMAIN
+||bytedns1.*^$dnsrewrite=NXDOMAIN
+!
+!
+! Category: Block
+! 掘金
+||juejin.cn^
+!
+! online shopping platform
+||u.jd.com^
+||1111.tmall.com^
+!
+! suspicious sites
+||qianxun.com^
+!
+!
+! Category: Purify
+! Baidu
+||baidu.com^
+@@||www.baidu.com^
+@@||passport.baidu.com^
+@@||wappass.baidu.com^
+@@||baike.baidu.com^
+@@||jingyan.baidu.com^
+@@||zhidao.baidu.com^
+@@||pan.baidu.com^
+@@||wenku.baidu.com^
+@@||tieba.baidu.com^
+@@||quantum-hub.baidu.com^
+!
+! zhihu(zhihu question & zhuanlan)
+||zhihu.com^
+@@||www.zhihu.com^
+@@||zhuanlan.zhihu.com^
+@@||static.zhihu.com^
+@@||zhimg.com^
+@@||link.zhihu.com^
+!
+! 什么值得买(include WAP fix)
+||smzdm.com^
+@@||post.smzdm.com^
+@@||post.m.smzdm.com^
+!
+! CSDN blog
+||csdn.net^
+||csdnimg.cn^
+@@||blog.csdn.net^
+@@||img-blog.csdnimg.cn^
+!
+!
+! Category: Fix
+! e Foundation
+@@||e.foundation^$important
+@@||ecloud.global^$important
+@@||murena.com^$important
+@@||murena.io^$important
+!
+! vpsor
+@@||vpsor.cn^
+!
+! 123pan
+@@||www.123pan.com^
+@@||statics.123pan.com^
+!
+! Bing(parental CATEGORY_BLACKLISTED)
+!@@||www.bing.com^
+!@@||cn.bing.com^
+!
+! HUAWEI/HONOR connectivity check
+@@||connectivitycheck.platform.hicloud.com^
+@@||connectivitycheck.platform.hihonorcloud.com^
+!@@||connectivitycheck.platform.dbankcloud.com^
+!@@||stdm-drcn.platform.hicloud.com^
+@@||connectivitycheck-backup.platform.hihonorcloud.com^
+! hihonorcloud
+!@@||account-drcn.platform.hihonorcloud.com^
+!
+! IOS AppStore-download apps
+@@||iosapps.itunes.apple.com^
+!
+! renminribao app
+@@||peopleapp.com^
+!
+! xuexiqiangguo
+@@||xuexi.cn^
+! keyi yuming
+||px-itrace.xuexi.cn^$important
+||lws.xuexi.cn^$important
+||umid.xuexi.cn^$important
+!
+! Tencent
+! weixin HttpDNS
+!||dns.qq.com^
+!||dns.weixin.qq.com^
+!
+! 360 smart camera
+!@@||360.cn^
+!
+! flatpak install flathub com.baidu.NetDisk
+@@||issuepcdn.baidupcs.com^
+!
+! 重返未来：1999
+@@||account.sl916.com^
+@@||account-bak.sl916.com^
+@@||notice.sl916.com^
+@@||notice-res.sl916.com^
+@@||gamesdk.sl916.com^
+@@||gamesdk-bak.sl916.com^
+! @@||ssgamesdk-hotupdate.sl916.com^
+@@||game-re-service.sl916.com^
+@@||game-re-service-bak.sl916.com^
+@@||d.bluepoch.com^
+@@||hotupdate.sl916.com^
+@@||hotupdate-bak.sl916.com^
+@@||hotupdate-res.sl916.com^
+@@||hotupdate-res-bak.sl916.com^
+@@||optionalres.sl916.com^
+@@||optionalres-bak.sl916.com^
+@@||optionalres-res.sl916.com^
+! 重返未来：1999 H5活动
+@@||re.bluepoch.com^
