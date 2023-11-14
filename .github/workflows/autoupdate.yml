@@ -101,8 +101,8 @@ jobs:
       # Push a commit using the built-in token
       - name: Push
         run: |
-          # git config user.name github-actions
-          # git config user.email github-actions@github.com
-          # git add .
-          # git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
-          # git push
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+          git push
