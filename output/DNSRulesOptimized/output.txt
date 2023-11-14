@@ -1,9 +1,9 @@
 !
 ! Title: DNS Rules (Optimized)
-! Description: A radical filter compiled from multiple sources
+! Description: A extreme aggressive & restrictive filter compiled from multiple sources
 ! Homepage: https://github.com/RWTighnari/HostListCompilation
 ! License: AGPL-3.0
-! Last modified: 2023-11-14T19:36:20.808Z
+! Last modified: 2023-11-14T19:53:43.128Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
