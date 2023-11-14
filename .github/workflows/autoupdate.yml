@@ -18,7 +18,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains two jobs called "DNSRules" and "ContentRules"
+  # The workflow contains three jobs called "DNSRules", "ContentRules" and "Push".
   DNSRules:
     # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
     name: DNS Rules (AdGuard Home)
@@ -39,16 +39,12 @@ jobs:
       - name: Build a blocklist
         run: hostlist-compiler -c "configuration/DNSRules/configuration.json" -o "output/DNSRules/output.txt"
 
-      # Push a commit using the built-in token
-      - name: Push
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
-          git push
+      # Upload the generated file via "Upload-Artifact".
+      - uses: actions/upload-artifact@main
+        with:
+          name: DNS Rules (AdGuard Home)
+          path: output/DNSRules/output.txt
 
-  # This workflow contains two jobs called "DNSRules" and "ContentRules"
   ContentRules:
     # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
     name: Content Rules (AdGuard for Android)
@@ -69,11 +65,48 @@ jobs:
       - name: Build a blocklist
         run: hostlist-compiler -c "configuration/ContentRules/configuration.json" -o "output/ContentRules/outputOptimized.txt"
 
+      # Upload the generated file via "Upload-Artifact".
+      - uses: actions/upload-artifact@main
+        with:
+          name: Content Rules (AdGuard for Android)
+          path: output/ContentRules/outputOptimized.txt
+
+  Push:
+    # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
+    name: Push a commit
+
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@main
+
+      # This downloads artifacts from your build
+      - uses: actions/download-artifact@main
+        with:
+          name: DNS Rules (AdGuard Home)
+          path: output/DNSRules/output.txt
+
+      # This downloads artifacts from your build
+      - uses: actions/download-artifact@main
+        with:
+          name: Content Rules (AdGuard for Android)
+          path: output/ContentRules/outputOptimized.txt
+      
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: path/to/artifact
+
+
+
+
       # Push a commit using the built-in token
       - name: Push
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
-          git push
+          # git config user.name github-actions
+          # git config user.email github-actions@github.com
+          # git add .
+          # git commit -m "Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+          # git push
