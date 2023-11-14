@@ -45,7 +45,7 @@ jobs:
           name: DNS Rules (AdGuard Home)
           path: output/DNSRules/output.txt
 
-  ContentRules:
+  ContentRulesOptimized:
     # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
     name: Content Rules (AdGuard for Android)
 
@@ -63,20 +63,20 @@ jobs:
 
       # Build a configurable blocklist from multiple sources (AdGuard Home)
       - name: Build a blocklist
-        run: hostlist-compiler -c "configuration/ContentRules/configuration.json" -o "output/ContentRules/outputOptimized.txt"
+        run: hostlist-compiler -c "configuration/ContentRulesOptimized/configuration.json" -o "output/ContentRulesOptimized/output.txt"
 
       # Upload the generated file via "Upload-Artifact".
       - uses: actions/upload-artifact@main
         with:
           name: Content Rules (AdGuard for Android)
-          path: output/ContentRules/outputOptimized.txt
+          path: output/ContentRulesOptimized/output.txt
 
   Push:
     # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
     name: Push a commit
 
     # Waiting for files to be generated
-    needs: [DNSRules, ContentRules]
+    needs: [DNSRules, ContentRulesOptimized]
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -90,20 +90,13 @@ jobs:
       - uses: actions/download-artifact@main
         with:
           name: DNS Rules (AdGuard Home)
-          path: output/DNSRules/output.txt
+          path: output/DNSRules
 
       # This downloads artifacts from your build
       - uses: actions/download-artifact@main
         with:
           name: Content Rules (AdGuard for Android)
-          path: output/ContentRules/outputOptimized.txt
-      
-      - name: Display structure of downloaded files
-        run: ls -R
-        working-directory: path/to/artifact
-
-
-
+          path: output/ContentRulesOptimized
 
       # Push a commit using the built-in token
       - name: Push
