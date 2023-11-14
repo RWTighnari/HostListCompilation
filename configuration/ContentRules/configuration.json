@@ -1,0 +1,111 @@
+{
+    "name": "Host List Compilation",
+    "description": "A radical filter compiled from multiple sources",
+    "homepage": "https://github.com/RWTighnari/HostListCompilation",
+    "license": "AGPL-3.0",
+    "sources": [
+        {
+            "name": "HC REGEX LIST",
+            "source": "https://raw.githubusercontent.com/hacamer/AGHRules/main/regex.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Personal AGH Rules",
+            "source": "sources/DNSRules/PersonalRules.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Base filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/2_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Mobile Ads filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/11_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard URL Tracking filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/17_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Tracking Protection filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/3_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "EasyPrivacy",
+            "source": "https://easylist.to/easylist/easyprivacy.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Legitimate URL Shortener",
+            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "ClearURLs for uBo (unofficial)",
+            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Social Media filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/4_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Cookie Notices filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/18_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Mobile App Banners filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/20_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Other Annoyances filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/21_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Widgets filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/22_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Annoyances filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/14_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Adblock Warning Removal List",
+            "source": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Chinese filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/224_optimized.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdRules AdBlock List Lite",
+            "source": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "NoCoin Filter List",
+            "source": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+            "type": "adblock"
+        }
+    ],
+    "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Deduplicate",
+        "RemoveEmptyLines",
+        "TrimLines",
+        "InsertFinalNewLine"
+    ]
+}

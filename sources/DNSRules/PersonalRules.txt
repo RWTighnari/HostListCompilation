@@ -122,7 +122,8 @@
 ! flatpak install flathub com.baidu.NetDisk
 !@@||issuepcdn.baidupcs.com^
 !
-! Blog
+! .top
+@@||adrules.top^
 @@||blog.clarkqwq.top^
 @@||www.skira.top^
 !
