@@ -1,19 +1,9 @@
 {
-    "name": "Host List Compilation",
+    "name": "Content Rules (Optimized)",
     "description": "A radical filter compiled from multiple sources",
     "homepage": "https://github.com/RWTighnari/HostListCompilation",
     "license": "AGPL-3.0",
     "sources": [
-        {
-            "name": "HC REGEX LIST",
-            "source": "https://raw.githubusercontent.com/hacamer/AGHRules/main/regex.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "Personal AGH Rules",
-            "source": "sources/DNSRules/PersonalRules.txt",
-            "type": "adblock"
-        },
         {
             "name": "AdGuard Base filter (Optimized)",
             "source": "https://filters.adtidy.org/android/filters/2_optimized.txt",
@@ -70,13 +60,13 @@
             "type": "adblock"
         },
         {
-            "name": "AdGuard Other Annoyances filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/21_optimized.txt",
+            "name": "AdGuard Widgets filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/22_optimized.txt",
             "type": "adblock"
         },
         {
-            "name": "AdGuard Widgets filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/22_optimized.txt",
+            "name": "AdGuard Other Annoyances filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/21_optimized.txt",
             "type": "adblock"
         },
         {
@@ -100,8 +90,8 @@
             "type": "adblock"
         },
         {
-            "name": "NoCoin Filter List",
-            "source": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+            "name": "Filter unblocking search ads and self-promotion (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/10_optimized.txt",
             "type": "adblock"
         }
     ],

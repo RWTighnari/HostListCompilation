@@ -1,2 +1,2 @@
 # Host List Compilation
-A radical filter compiled from multiple sources
+A extreme aggressive & restrictive filter compiled from multiple sources

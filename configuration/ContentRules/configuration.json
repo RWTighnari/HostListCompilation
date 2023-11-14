@@ -1,0 +1,96 @@
+{
+    "name": "Content Rules",
+    "description": "A radical filter compiled from multiple sources",
+    "homepage": "https://github.com/RWTighnari/HostListCompilation",
+    "license": "AGPL-3.0",
+    "sources": [
+        {
+            "name": "AdGuard Base filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard URL Tracking filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Tracking Protection filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "EasyPrivacy",
+            "source": "https://easylist.to/easylist/easyprivacy.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Legitimate URL Shortener",
+            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "ClearURLs for uBo (unofficial)",
+            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Social Media filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Cookie Notices filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_18_Annoyances_Cookies/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Popups filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_19_Annoyances_Popups/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Widgets filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Other Annoyances filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Annoyances filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Adblock Warning Removal List",
+            "source": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Chinese filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdRules AdBlock List Lite",
+            "source": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Filter unblocking search ads and self-promotion",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt",
+            "type": "adblock"
+        }
+    ],
+    "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Deduplicate",
+        "RemoveEmptyLines",
+        "TrimLines",
+        "InsertFinalNewLine"
+    ]
+}
