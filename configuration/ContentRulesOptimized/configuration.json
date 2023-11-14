@@ -60,6 +60,11 @@
             "type": "adblock"
         },
         {
+            "name": "AdGuard Popups filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/19_optimized.txt",
+            "type": "adblock"
+        },
+        {
             "name": "AdGuard Mobile App Banners filter (Optimized)",
             "source": "https://filters.adtidy.org/android/filters/20_optimized.txt",
             "type": "adblock"
