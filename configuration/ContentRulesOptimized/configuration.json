@@ -35,48 +35,13 @@
             "type": "adblock"
         },
         {
-            "name": "ClearURLs for uBo (unofficial)",
-            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt",
-            "type": "adblock"
-        },
-        {
             "name": "AdGuard Social Media filter (Optimized)",
             "source": "https://filters.adtidy.org/android/filters/4_optimized.txt",
             "type": "adblock"
         },
         {
-            "name": "AdGuard Cookie Notices filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/18_optimized.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "AdGuard Popups filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/19_optimized.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "AdGuard Mobile App Banners filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/20_optimized.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "AdGuard Widgets filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/22_optimized.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "AdGuard Other Annoyances filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/21_optimized.txt",
-            "type": "adblock"
-        },
-        {
             "name": "AdGuard Annoyances filter (Optimized)",
             "source": "https://filters.adtidy.org/android/filters/14_optimized.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "Adblock Warning Removal List",
-            "source": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
             "type": "adblock"
         },
         {
