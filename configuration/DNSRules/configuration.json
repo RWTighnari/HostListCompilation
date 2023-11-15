@@ -15,19 +15,9 @@
       "type": "adblock"
     },
     {
-      "name": "AbBlock List REGEX",
-      "source": "https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/regex.txt",
-      "type": "adblock"
-    },
-    {
       "name": "AdGuard DNS filter",
       "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
       "type": "adblock"
-    },
-    {
-      "name": "AdAway Default Blocklist",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt",
-      "type": "hosts"
     },
     {
       "name": "CHN: AdRules DNS List",
@@ -63,11 +53,6 @@
       "name": "Steven Black's List",
       "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
       "type": "hosts"
-    },
-    {
-      "name": "OISD Blocklist NSFW",
-      "source": "https://nsfw.oisd.nl",
-      "type": "adblock"
     },
     {
       "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",

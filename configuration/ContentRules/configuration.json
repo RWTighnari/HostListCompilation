@@ -25,18 +25,8 @@
             "type": "adblock"
         },
         {
-            "name": "AdGuard Social Media filter",
-            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt",
-            "type": "adblock"
-        },
-        {
             "name": "AdGuard Annoyances filter",
             "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "Adblock Warning Removal List",
-            "source": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
             "type": "adblock"
         },
         {
