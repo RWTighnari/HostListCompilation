@@ -20,23 +20,13 @@
             "type": "adblock"
         },
         {
-            "name": "AdGuard Tracking Protection filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/3_optimized.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "EasyPrivacy",
-            "source": "https://easylist.to/easylist/easyprivacy.txt",
-            "type": "adblock"
-        },
-        {
             "name": "Legitimate URL Shortener",
             "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
             "type": "adblock"
         },
         {
-            "name": "AdGuard Social Media filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/4_optimized.txt",
+            "name": "AdGuard Tracking Protection filter (Optimized)",
+            "source": "https://filters.adtidy.org/android/filters/3_optimized.txt",
             "type": "adblock"
         },
         {
@@ -52,11 +42,6 @@
         {
             "name": "AdRules AdBlock List Lite",
             "source": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt",
-            "type": "adblock"
-        },
-        {
-            "name": "Filter unblocking search ads and self-promotion (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/10_optimized.txt",
             "type": "adblock"
         }
     ],

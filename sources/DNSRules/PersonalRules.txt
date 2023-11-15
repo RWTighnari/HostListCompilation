@@ -19,14 +19,21 @@
 !
 !
 ! Category: REGEX
-! kill all domains that contain "click/dns"
+! kill all domains that contain "click/track/analytics/adservice(s)/dns/ad(s)"
 /click/
+/track/
+/analytics/
+/adservice/
+! https://adblockplus.org/zh_CN/faq_basics
+/adv(?!ice)/
 ||dns.*^$dnsrewrite=NXDOMAIN
 ||doh.*^$dnsrewrite=NXDOMAIN
 ||dot.*^$dnsrewrite=NXDOMAIN
 ||httpdns.*^$dnsrewrite=NXDOMAIN
 ||httpsdns.*^$dnsrewrite=NXDOMAIN
 ||bytedns1.*^$dnsrewrite=NXDOMAIN
+||ad.*^
+||ads.*^
 !
 !
 ! Category: Block

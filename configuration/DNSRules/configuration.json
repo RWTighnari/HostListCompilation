@@ -15,6 +15,11 @@
       "type": "adblock"
     },
     {
+      "name": "AbBlock List REGEX",
+      "source": "https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/regex.txt",
+      "type": "adblock"
+    },
+    {
       "name": "AdGuard DNS filter",
       "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
       "type": "adblock"
@@ -27,6 +32,11 @@
     {
       "name": "CHN: AdRules DNS List",
       "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "AbBlock List DOMAIN",
+      "source": "https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/domain.txt",
       "type": "adblock"
     },
     {
@@ -55,11 +65,6 @@
       "type": "hosts"
     },
     {
-      "name": "hBlock",
-      "source": "https://hblock.molinero.dev/hosts_adblock.txt",
-      "type": "adblock"
-    },
-    {
       "name": "OISD Blocklist NSFW",
       "source": "https://nsfw.oisd.nl",
       "type": "adblock"
@@ -73,38 +78,11 @@
       "name": "NoCoin Filter List",
       "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
       "type": "hosts"
-    },
-    {
-      "name": "The Big List of Hacked Malware Web Sites",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
-      "type": "hosts"
-    },
-    {
-      "name": "Malicious URL Blocklist (URLHaus)",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
-      "type": "adblock"
-    },
-    {
-      "name": "Dandelion Sprout's Anti-Malware List",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
-      "type": "adblock"
-    },
-    {
-      "name": "WindowsSpyBlocker - Hosts spy rules",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt",
-      "type": "hosts"
-    },
-    {
-      "name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
-      "type": "adblock"
     }
   ],
   "transformations": [
     "RemoveComments",
     "Compress",
-    "RemoveModifiers",
-    "Validate",
     "Deduplicate",
     "RemoveEmptyLines",
     "TrimLines",

@@ -15,6 +15,11 @@
       "type": "adblock"
     },
     {
+      "name": "AbBlock List REGEX",
+      "source": "https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/regex.txt",
+      "type": "adblock"
+    },
+    {
       "name": "AdGuard DNS filter",
       "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
       "type": "adblock"
@@ -23,8 +28,6 @@
   "transformations": [
     "RemoveComments",
     "Compress",
-    "RemoveModifiers",
-    "Validate",
     "Deduplicate",
     "RemoveEmptyLines",
     "TrimLines",
