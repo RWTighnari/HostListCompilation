@@ -32,7 +32,6 @@
 ||httpdns.*^$dnsrewrite=NXDOMAIN
 ||httpsdns.*^$dnsrewrite=NXDOMAIN
 ||bytedns1.*^$dnsrewrite=NXDOMAIN
-||ad.*^
 ||ads.*^
 !
 !
