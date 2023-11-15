@@ -25,11 +25,6 @@
       "type": "adblock"
     },
     {
-      "name": "AbBlock List DOMAIN",
-      "source": "https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/domain.txt",
-      "type": "adblock"
-    },
-    {
       "name": "NEO DEV HOST",
       "source": "https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
       "type": "adblock"
@@ -45,24 +40,24 @@
       "type": "adblock"
     },
     {
+      "name": "DNS Blocklists - Ultimate",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Encrypted DNS Servers only",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Dynamic DNS blocking",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
+      "type": "adblock"
+    },
+    {
       "name": "OISD Blocklist Big",
       "source": "https://big.oisd.nl",
       "type": "adblock"
-    },
-    {
-      "name": "Steven Black's List",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
-      "type": "hosts"
-    },
-    {
-      "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
-      "type": "adblock"
-    },
-    {
-      "name": "NoCoin Filter List",
-      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
-      "type": "hosts"
     }
   ],
   "transformations": [

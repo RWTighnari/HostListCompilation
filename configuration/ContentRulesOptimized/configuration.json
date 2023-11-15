@@ -10,11 +10,6 @@
             "type": "adblock"
         },
         {
-            "name": "AdGuard Mobile Ads filter (Optimized)",
-            "source": "https://filters.adtidy.org/android/filters/11_optimized.txt",
-            "type": "adblock"
-        },
-        {
             "name": "AdGuard URL Tracking filter (Optimized)",
             "source": "https://filters.adtidy.org/android/filters/17_optimized.txt",
             "type": "adblock"
