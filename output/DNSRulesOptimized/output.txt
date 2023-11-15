@@ -3,7 +3,7 @@
 ! Description: A extreme aggressive & restrictive filter compiled from multiple sources
 ! Homepage: https://github.com/RWTighnari/HostListCompilation
 ! License: AGPL-3.0
-! Last modified: 2023-11-15T11:47:49.127Z
+! Last modified: 2023-11-15T12:04:07.158Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -47,7 +47,6 @@
 ||httpdns.*^$dnsrewrite=NXDOMAIN
 ||httpsdns.*^$dnsrewrite=NXDOMAIN
 ||bytedns1.*^$dnsrewrite=NXDOMAIN
-||ad.*^
 ||ads.*^
 ||juejin.cn^
 ||u.jd.com^
