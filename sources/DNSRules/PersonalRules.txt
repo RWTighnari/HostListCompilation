@@ -99,6 +99,11 @@
 @@||murena.com^$important
 @@||murena.io^$important
 !
+! GitHub
+@@||raw.githubusercontent.com^
+@@||actions.githubusercontent.com^
+@@||avatars.githubusercontent.com^
+!
 ! IOS AppStore-download apps
 @@||iosapps.itunes.apple.com^
 !
