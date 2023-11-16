@@ -3,7 +3,7 @@
 ! Description: A extreme aggressive & restrictive filter compiled from multiple sources
 ! Homepage: https://github.com/RWTighnari/HostListCompilation
 ! License: AGPL-3.0
-! Last modified: 2023-11-15T21:21:17.223Z
+! Last modified: 2023-11-16T00:32:34.229Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
