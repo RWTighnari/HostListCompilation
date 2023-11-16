@@ -16,6 +16,8 @@
 ! 2620:fe::fe:10
 ! Fix Google Public DNS
 @@||dns.google^$important
+! Fix Quad9
+@@||dns11.quad9.net^$important
 ! Fix tunnelbroker.net
 @@||tunnelbroker.net^$important
 ! Fix .work
