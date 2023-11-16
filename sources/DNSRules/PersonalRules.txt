@@ -16,6 +16,10 @@
 ! 2620:fe::fe:10
 ! Fix Google Public DNS
 @@||dns.google^$important
+! Fix tunnelbroker.net
+@@||tunnelbroker.net^$important
+! Fix .work
+@@||fcyz.work^$important
 !
 !
 ! Category: REGEX
@@ -138,8 +142,15 @@
 !||dns.qq.com^
 !||dns.weixin.qq.com^
 !
+! xiaohongshu
+@@||fe-static.xhscdn.com^
+@@||fe-video-qc.xhscdn.com^
+@@||picasso-static.xiaohongshu.com^
+!
 ! 360 smart camera
-!@@||360.cn^
+@@||q3.jia.360.cn^
+@@||up2.jia.360.cn^
+@@||ota3.jia.360.cn^
 !
 ! flatpak install flathub com.baidu.NetDisk
 !@@||issuepcdn.baidupcs.com^

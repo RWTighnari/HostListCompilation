@@ -45,90 +45,91 @@ jobs:
           name: DNS Rules (AdGuard Home)
           path: output/DNSRules/output.txt
 
-  ContentRulesOptimized:
-    # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
-    name: Content Rules (AdGuard for Android)
+  # ContentRulesOptimized:
+  #   # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
+  #   name: Content Rules (AdGuard for Android)
 
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+  #   # The type of runner that the job will run on
+  #   runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@main
+  #   # Steps represent a sequence of tasks that will be executed as part of the job
+  #   steps:
+  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #     - uses: actions/checkout@main
 
-      # Install hostlist-compiler (https://github.com/AdguardTeam/HostlistCompiler)
-      - name: Install hostlist-compiler
-        run: npm i -g @adguard/hostlist-compiler
+  #     # Install hostlist-compiler (https://github.com/AdguardTeam/HostlistCompiler)
+  #     - name: Install hostlist-compiler
+  #       run: npm i -g @adguard/hostlist-compiler
 
-      # Build a configurable blocklist from multiple sources
-      - name: Build a blocklist
-        run: hostlist-compiler -c "configuration/ContentRulesOptimized/configuration.json" -o "output/ContentRulesOptimized/output.txt"
+  #     # Build a configurable blocklist from multiple sources
+  #     - name: Build a blocklist
+  #       run: hostlist-compiler -c "configuration/ContentRulesOptimized/configuration.json" -o "output/ContentRulesOptimized/output.txt"
 
-      # Upload the generated file via "Upload-Artifact".
-      - uses: actions/upload-artifact@main
-        with:
-          name: Content Rules (AdGuard for Android)
-          path: output/ContentRulesOptimized/output.txt
+  #     # Upload the generated file via "Upload-Artifact".
+  #     - uses: actions/upload-artifact@main
+  #       with:
+  #         name: Content Rules (AdGuard for Android)
+  #         path: output/ContentRulesOptimized/output.txt
 
-  DNSRulesOptimized:
-    # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
-    name: DNS Rules (AdGuard for Android)
+  # DNSRulesOptimized:
+  #   # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
+  #   name: DNS Rules (AdGuard for Android)
 
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+  #   # The type of runner that the job will run on
+  #   runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@main
+  #   # Steps represent a sequence of tasks that will be executed as part of the job
+  #   steps:
+  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #     - uses: actions/checkout@main
 
-      # Install hostlist-compiler (https://github.com/AdguardTeam/HostlistCompiler)
-      - name: Install hostlist-compiler
-        run: npm i -g @adguard/hostlist-compiler
+  #     # Install hostlist-compiler (https://github.com/AdguardTeam/HostlistCompiler)
+  #     - name: Install hostlist-compiler
+  #       run: npm i -g @adguard/hostlist-compiler
 
-      # Build a configurable blocklist from multiple sources
-      - name: Build a blocklist
-        run: hostlist-compiler -c "configuration/DNSRulesOptimized/configuration.json" -o "output/DNSRulesOptimized/output.txt"
+  #     # Build a configurable blocklist from multiple sources
+  #     - name: Build a blocklist
+  #       run: hostlist-compiler -c "configuration/DNSRulesOptimized/configuration.json" -o "output/DNSRulesOptimized/output.txt"
 
-      # Upload the generated file via "Upload-Artifact".
-      - uses: actions/upload-artifact@main
-        with:
-          name: DNS Rules (AdGuard for Android)
-          path: output/DNSRulesOptimized/output.txt
+  #     # Upload the generated file via "Upload-Artifact".
+  #     - uses: actions/upload-artifact@main
+  #       with:
+  #         name: DNS Rules (AdGuard for Android)
+  #         path: output/DNSRulesOptimized/output.txt
 
-  ContentRules:
-    # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
-    name: Content Rules (AdGuard Browser Extension)
+  # ContentRules:
+  #   # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
+  #   name: Content Rules (AdGuard Browser Extension)
 
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+  #   # The type of runner that the job will run on
+  #   runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@main
+  #   # Steps represent a sequence of tasks that will be executed as part of the job
+  #   steps:
+  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #     - uses: actions/checkout@main
 
-      # Install hostlist-compiler (https://github.com/AdguardTeam/HostlistCompiler)
-      - name: Install hostlist-compiler
-        run: npm i -g @adguard/hostlist-compiler
+  #     # Install hostlist-compiler (https://github.com/AdguardTeam/HostlistCompiler)
+  #     - name: Install hostlist-compiler
+  #       run: npm i -g @adguard/hostlist-compiler
 
-      # Build a configurable blocklist from multiple sources
-      - name: Build a blocklist
-        run: hostlist-compiler -c "configuration/ContentRules/configuration.json" -o "output/ContentRules/output.txt"
+  #     # Build a configurable blocklist from multiple sources
+  #     - name: Build a blocklist
+  #       run: hostlist-compiler -c "configuration/ContentRules/configuration.json" -o "output/ContentRules/output.txt"
 
-      # Upload the generated file via "Upload-Artifact".
-      - uses: actions/upload-artifact@main
-        with:
-          name: Content Rules (AdGuard Browser Extension)
-          path: output/ContentRules/output.txt
+  #     # Upload the generated file via "Upload-Artifact".
+  #     - uses: actions/upload-artifact@main
+  #       with:
+  #         name: Content Rules (AdGuard Browser Extension)
+  #         path: output/ContentRules/output.txt
 
   Push:
     # Use jobs.<job_id>.name to set a name for the job, which is displayed in the GitHub UI.
     name: Push to the repository
 
     # Waiting for files to be generated
-    needs: [DNSRules, ContentRulesOptimized, DNSRulesOptimized, ContentRules]
+    # needs: [DNSRules, ContentRulesOptimized, DNSRulesOptimized, ContentRules]
+    needs: DNSRules
 
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -145,22 +146,22 @@ jobs:
           path: output/DNSRules
 
       # This downloads artifacts from your build
-      - uses: actions/download-artifact@main
-        with:
-          name: Content Rules (AdGuard for Android)
-          path: output/ContentRulesOptimized
+      # - uses: actions/download-artifact@main
+      #   with:
+      #     name: Content Rules (AdGuard for Android)
+      #     path: output/ContentRulesOptimized
       
       # This downloads artifacts from your build
-      - uses: actions/download-artifact@main
-        with:
-          name: DNS Rules (AdGuard for Android)
-          path: output/DNSRulesOptimized
+      # - uses: actions/download-artifact@main
+      #   with:
+      #     name: DNS Rules (AdGuard for Android)
+      #     path: output/DNSRulesOptimized
 
       # This downloads artifacts from your build
-      - uses: actions/download-artifact@main
-        with:
-          name: Content Rules (AdGuard Browser Extension)
-          path: output/ContentRules
+      # - uses: actions/download-artifact@main
+      #   with:
+      #     name: Content Rules (AdGuard Browser Extension)
+      #     path: output/ContentRules
 
       # Push a commit using the built-in token
       - name: Push a commit

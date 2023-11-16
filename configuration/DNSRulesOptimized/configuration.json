@@ -13,6 +13,11 @@
       "name": "Personal AGH Rules",
       "source": "sources/DNSRules/PersonalRules.txt",
       "type": "adblock"
+    },
+    {
+      "name": "AdGuard DNS filter",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
+      "type": "adblock"
     }
   ],
   "transformations": [
