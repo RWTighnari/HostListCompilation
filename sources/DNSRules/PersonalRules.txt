@@ -156,6 +156,8 @@
 @@||q3.jia.360.cn^
 @@||up2.jia.360.cn^
 @@||ota3.jia.360.cn^
+@@||360.cn^$client=Dad
+||ad.jia.360.cn^$client=Dad,important
 !
 ! flatpak install flathub com.baidu.NetDisk
 !@@||issuepcdn.baidupcs.com^
@@ -164,6 +166,9 @@
 @@||adrules.top^
 @@||blog.clarkqwq.top^
 @@||www.skira.top^
+!
+! cnblogs
+@@||www.cnblogs.com^
 !
 ! 重返未来：1999
 @@||account.sl916.com^
