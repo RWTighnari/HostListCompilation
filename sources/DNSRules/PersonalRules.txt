@@ -34,7 +34,7 @@
 /content/
 /cookie/
 /market/
-/track/
+/trac/
 /analytics/
 /adservice/
 /metric/
@@ -128,24 +128,31 @@
 ! vpsor
 @@||vpsor.cn^
 !
+! lanzou
+@@||developer-oss.lanzouc.com^
+!
 ! 123pan
 @@||www.123pan.com^
 @@||statics.123pan.com^
+@@||gtm-cn-5yd3c1s2701.123pan.com^
+@@||web-pro2.cjjd18.com^
 !
 ! renminribao app
-@@||peopleapp.com^
+@@||peopleapp.com^$client=Dad|Grandpa
 !
 ! xuexiqiangguo
-@@||xuexi.cn^
+@@||xuexi.cn^$client=Dad|Grandpa
 ! keyi yuming
-||px-itrace.xuexi.cn^$important
-||lws.xuexi.cn^$important
-||umid.xuexi.cn^$important
+||px-itrace.xuexi.cn^$client=Dad|Grandpa,important
+||lws.xuexi.cn^$client=Dad|Grandpa,important
+||umid.xuexi.cn^$client=Dad|Grandpa,important
 !
 ! Tencent
 ! weixin HttpDNS
 !||dns.qq.com^
 !||dns.weixin.qq.com^
+! weixin (?)
+!@@||voipfinderliveplay.wxqcloud.qq.com^$client=Mom
 !
 ! xiaohongshu
 @@||fe-static.xhscdn.com^
@@ -166,6 +173,7 @@
 @@||adrules.top^
 @@||blog.clarkqwq.top^
 @@||www.skira.top^
+@@||tianli0.top^
 !
 ! cnblogs
 @@||www.cnblogs.com^
