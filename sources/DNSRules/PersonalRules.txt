@@ -229,6 +229,3 @@
 !
 ! sogou
 ||sogou.com^
-!
-! Unknown
-||mob.com^
