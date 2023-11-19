@@ -14,10 +14,10 @@
 ! 149.112.112.10
 ! 2620:fe::10
 ! 2620:fe::fe:10
-! Fix Google Public DNS
-@@||dns.google^$important
 ! Fix Quad9
 @@||dns11.quad9.net^$important
+! Fix Google Public DNS
+@@||dns.google^$important
 ! Fix tunnelbroker.net
 @@||tunnelbroker.net^$important
 ! Fix .work
@@ -28,6 +28,8 @@
 ! kill all domains that contain "click/track/analytics/adservice(s)/dns/ad(s)"
 /izat/
 /xtra/
+/beacon/
+/otheve/
 /click/
 /collect/
 /connect/
@@ -55,19 +57,19 @@
 !
 !
 ! Category: Block
-! Qualcomm Technologies, Inc. (XTRA & IZat)
-@@||izatcloud.net^$important
+! Qualcomm Technologies, Inc. (XTRA & IZat)   [REGEX]
+||izatcloud.net^$important
 ! xtra-daemon
-@@||xtracloud.net^$important
+||xtracloud.net^$important
 !
 ! Google
 ! According to Google, the host android.clients.google.com serves the Google Play Store for periodical device registration, location, search for apps and many other functions.
-!@@||android.clients.google.com^$important
+!||android.clients.google.com^$important
 ! Android's Google server connectivity check
-@@||connectivitycheck.gstatic.com^$important
+||connectivitycheck.gstatic.com^$important
 !
 ! 掘金
-||juejin.cn^
+!||juejin.cn^
 !
 ! online shopping platform
 ||u.jd.com^
@@ -122,12 +124,13 @@
 @@||raw.githubusercontent.com^
 @@||actions.githubusercontent.com^
 @@||avatars.githubusercontent.com^
+@@||objects.githubusercontent.com^
 !
 ! IOS AppStore-download apps
 @@||iosapps.itunes.apple.com^
 !
 ! HUAWEI/HONOR connectivity check
-@@||connectivitycheck.platform.hicloud.com^
+!@@||connectivitycheck.platform.hicloud.com^
 @@||connectivitycheck.platform.hihonorcloud.com^
 !@@||connectivitycheck.platform.dbankcloud.com^
 !@@||stdm-drcn.platform.hicloud.com^
@@ -136,7 +139,7 @@
 !@@||account-drcn.platform.hihonorcloud.com^
 !
 ! ?
-@@||smartont.net^
+||smartont.net^
 !
 ! vpsor
 @@||vpsor.cn^
@@ -166,6 +169,8 @@
 !||dns.weixin.qq.com^
 ! weixin (?)
 !@@||voipfinderliveplay.wxqcloud.qq.com^$client=Mom
+! tencent cloud
+!@@||cloud.tencent.com^
 !
 ! xiaohongshu
 @@||fe-static.xhscdn.com^
@@ -221,3 +226,9 @@
 @@||optionalres-res.sl916.com^
 ! 重返未来：1999 H5活动
 @@||re.bluepoch.com^
+!
+! sogou
+||sogou.com^
+!
+! Unknown
+||mob.com^
