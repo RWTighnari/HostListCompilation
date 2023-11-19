@@ -14,13 +14,13 @@
 ! 149.112.112.10
 ! 2620:fe::10
 ! 2620:fe::fe:10
-! Fix Quad9
+! Fix Quad9 dns11
 @@||dns11.quad9.net^$important
 ! Fix Google Public DNS
 @@||dns.google^$important
 ! Fix tunnelbroker.net
 @@||tunnelbroker.net^$important
-! Fix .work
+! Fix fcyz.work
 @@||fcyz.work^$important
 !
 !
