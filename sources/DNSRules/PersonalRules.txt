@@ -177,7 +177,7 @@
 @@||imagev2.xmcdn.com^
 !
 ! bilibili (android)
-@@||new-service.biliapi.net^
+!@@||new-service.biliapi.net^
 !
 ! 360 smart camera
 @@||q3.jia.360.cn^
