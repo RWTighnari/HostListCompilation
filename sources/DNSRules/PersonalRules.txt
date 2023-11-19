@@ -26,6 +26,8 @@
 !
 ! Category: REGEX
 ! kill all domains that contain "click/track/analytics/adservice(s)/dns/ad(s)"
+/izat/
+/xtra/
 /click/
 /collect/
 /connect/
@@ -53,6 +55,17 @@
 !
 !
 ! Category: Block
+! Qualcomm Technologies, Inc. (XTRA & IZat)
+@@||izatcloud.net^$important
+! xtra-daemon
+@@||xtracloud.net^$important
+!
+! Google
+! According to Google, the host android.clients.google.com serves the Google Play Store for periodical device registration, location, search for apps and many other functions.
+!@@||android.clients.google.com^$important
+! Android's Google server connectivity check
+@@||connectivitycheck.gstatic.com^$important
+!
 ! 掘金
 ||juejin.cn^
 !
@@ -159,12 +172,18 @@
 @@||fe-video-qc.xhscdn.com^
 @@||picasso-static.xiaohongshu.com^
 !
+! Xiaoai AI Yinxiang - ximalaya
+@@||live.ximalaya.com^
+@@||imagev2.xmcdn.com^
+!
 ! 360 smart camera
 @@||q3.jia.360.cn^
 @@||up2.jia.360.cn^
 @@||ota3.jia.360.cn^
-@@||360.cn^$client=Dad
-||ad.jia.360.cn^$client=Dad,important
+! APP (android)
+@@||360.cn^$client=Dad|Mom
+||ad.jia.360.cn^$client=Dad|Mom,important
+@@||xstore.qihu.com^$client=Dad|Mom
 !
 ! flatpak install flathub com.baidu.NetDisk
 !@@||issuepcdn.baidupcs.com^
@@ -174,6 +193,7 @@
 @@||blog.clarkqwq.top^
 @@||www.skira.top^
 @@||tianli0.top^
+@@||shakaianee.top^
 !
 ! cnblogs
 @@||www.cnblogs.com^
