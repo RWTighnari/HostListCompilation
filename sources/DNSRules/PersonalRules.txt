@@ -182,6 +182,7 @@
 @@||imagev2.xmcdn.com^
 !
 ! bilibili (android)
+@@||app.bilibili.com^
 !@@||new-service.biliapi.net^
 !
 ! 360 smart camera
