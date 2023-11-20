@@ -188,11 +188,10 @@
 @@||y.gtimg.cn^
 !
 ! bilibili
-!@@||app.bilibili.com^
-!@@||new-service.biliapi.net^
-@@||upos-sz-mirrorcoso1.bilivideo.com^
-@@||www.snm0516.aisee.tv^
+!@@||www.snm0516.aisee.tv^
+! BBDown
 @@||api.snm0516.aisee.tv^
+@@||upos-sz-mirrorcoso1.bilivideo.com^
 !
 ! 360 smart camera
 @@||q3.jia.360.cn^
