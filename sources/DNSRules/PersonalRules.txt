@@ -67,6 +67,8 @@
 !||android.clients.google.com^$important
 ! Android's Google server connectivity check
 ||connectivitycheck.gstatic.com^$important
+! ?
+||metric.gstatic.com^$important
 !
 ! 掘金
 !||juejin.cn^
@@ -177,12 +179,16 @@
 @@||fe-video-qc.xhscdn.com^
 @@||picasso-static.xiaohongshu.com^
 !
-! Xiaoai AI Yinxiang - ximalaya
+! Xiaoai AI Yinxiang - multimedia
 @@||live.ximalaya.com^
 @@||imagev2.xmcdn.com^
+@@||pic.qtfm.cn^
+@@||open.ls.qingting.fm^
+@@||isure6-stream-qqmusic.a.bdycdn.cn^
+@@||y.gtimg.cn^
 !
 ! bilibili (android)
-@@||app.bilibili.com^
+!@@||app.bilibili.com^
 !@@||new-service.biliapi.net^
 !
 ! 360 smart camera
@@ -192,6 +198,9 @@
 ! APP (android)
 @@||360.cn^$client=Dad|Mom
 ||ad.jia.360.cn^$client=Dad|Mom,important
+||ad.life.360.cn^$client=Dad|Mom,important
+||commercial.shouji.360.cn^$client=Dad|Mom,important
+||strategy.shouji.360.cn^$client=Dad|Mom,important
 @@||xstore.qihu.com^$client=Dad|Mom
 !
 ! flatpak install flathub com.baidu.NetDisk
