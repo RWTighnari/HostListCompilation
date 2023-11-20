@@ -187,9 +187,11 @@
 @@||isure6-stream-qqmusic.a.bdycdn.cn^
 @@||y.gtimg.cn^
 !
-! bilibili (android)
+! bilibili
 !@@||app.bilibili.com^
 !@@||new-service.biliapi.net^
+@@||www.snm0516.aisee.tv^
+@@||api.snm0516.aisee.tv^
 !
 ! 360 smart camera
 @@||q3.jia.360.cn^
