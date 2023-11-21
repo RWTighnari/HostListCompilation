@@ -162,8 +162,6 @@
 @@||xuexi.cn^$client=Dad|Grandpa
 ! keyi yuming
 ||px-itrace.xuexi.cn^$client=Dad|Grandpa,important
-||lws.xuexi.cn^$client=Dad|Grandpa,important
-||umid.xuexi.cn^$client=Dad|Grandpa,important
 !
 ! Tencent
 ! weixin HttpDNS
@@ -196,7 +194,7 @@
 ! 360 smart camera
 @@||q3.jia.360.cn^
 @@||up2.jia.360.cn^
-@@||ota3.jia.360.cn^
+!@@||ota3.jia.360.cn^
 ! APP (android)
 @@||360.cn^$client=Dad|Mom
 ||ad.jia.360.cn^$client=Dad|Mom,important
