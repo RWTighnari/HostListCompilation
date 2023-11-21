@@ -193,7 +193,7 @@
 @@||upos-sz-mirrorcoso1.bilivideo.com^
 !
 ! 360 smart camera
-@@||q3.jia.360.cn^
+@@||q4.jia.360.cn^
 @@||up2.jia.360.cn^
 !@@||ota3.jia.360.cn^
 ! APP (android)
