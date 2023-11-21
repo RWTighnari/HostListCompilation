@@ -70,6 +70,9 @@
 ! ?
 ||metric.gstatic.com^$important
 !
+! miwifi
+||miwifi.com^
+!
 ! 掘金
 !||juejin.cn^
 !
@@ -113,6 +116,24 @@
 ||csdnimg.cn^
 @@||blog.csdn.net^
 @@||img-blog.csdnimg.cn^
+!
+! MITV
+||pandora.xiaomi.com^
+||gitv.tv^
+@@||bss.tv.mi.com^
+@@||media.ptmi.gitv.tv^
+@@||stv.ptqy.gitv.tv^
+! old way   [Fix]
+!||riskip.ptqy.gitv.tv^
+!||pic*.ptqy.gitv.tv^
+!||pic*.inter.ptqy.gitv.tv^
+!||preimage*.inter.ptqy.gitv.tv^
+!||data.video.ptqy.gitv.tv^
+!||subscription.ptqy.gitv.tv^
+!||wechat.ptqy.gitv.tv^
+||static-s.iqiyi.com^
+!||static-s.ptqy.gitv.tv^
+||iface*.iqiyi.com^
 !
 !
 ! Category: Fix
@@ -215,9 +236,13 @@
 @@||www.skira.top^
 @@||tianli0.top^
 @@||shakaianee.top^
+@@||qinlili.bid^
 !
 ! cnblogs
 @@||www.cnblogs.com^
+!
+! sms-activate.org
+@@||sms-activate.org^
 !
 ! 重返未来：1999
 @@||account.sl916.com^
