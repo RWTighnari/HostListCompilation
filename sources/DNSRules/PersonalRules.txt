@@ -180,6 +180,7 @@
 ! Xiaoai AI Yinxiang - multimedia
 @@||live.ximalaya.com^
 @@||imagev2.xmcdn.com^
+@@||broadcast.tx.xmcdn.com^
 @@||pic.qtfm.cn^
 @@||open.ls.qingting.fm^
 @@||isure6-stream-qqmusic.a.bdycdn.cn^
