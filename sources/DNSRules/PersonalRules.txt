@@ -276,5 +276,8 @@
 ! sogou
 ||sogou.com^
 !
+! MIUI
+||resolver.msg.xiaomi.net^
+!
 ! 10086
 @@||dx.10086.cn^
