@@ -185,6 +185,9 @@
 ! xuexiqiangguo
 @@||xuexi.cn^$client=Dad|Grandpa
 !
+! 中国大学MOOC
+@@||mooc*vod.stu.126.net^
+!
 ! Tencent
 ! weixin HttpDNS
 !||dns.qq.com^
