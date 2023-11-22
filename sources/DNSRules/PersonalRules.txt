@@ -73,15 +73,14 @@
 ! miwifi
 ||miwifi.com^
 !
-! 掘金
-!||juejin.cn^
+! ?
+||smartont.net^
 !
-! online shopping platform
-||u.jd.com^
-||1111.tmall.com^
+! MIUI
+||resolver.msg.xiaomi.net^
 !
-! suspicious sites
-||qianxun.com^
+! sogou
+||sogou.com^
 !
 !
 ! Category: Purify
@@ -168,9 +167,6 @@
 ! hihonorcloud
 !@@||account-drcn.platform.hihonorcloud.com^
 !
-! ?
-||smartont.net^
-!
 ! vpsor
 @@||vpsor.cn^
 !
@@ -188,8 +184,6 @@
 !
 ! xuexiqiangguo
 @@||xuexi.cn^$client=Dad|Grandpa
-! keyi yuming
-||px-itrace.xuexi.cn^$client=Dad|Grandpa,important
 !
 ! Tencent
 ! weixin HttpDNS
@@ -222,9 +216,9 @@
 @@||upos-sz-mirrorcoso1.bilivideo.com^
 !
 ! 360 smart camera
-@@||q4.jia.360.cn^
-@@||up2.jia.360.cn^
-!@@||ota3.jia.360.cn^
+@@||q*.jia.360.cn^
+@@||up*.jia.360.cn^
+!@@||ota*.jia.360.cn^
 ! ?
 !@@||dp.push.dc.360.cn^
 ! APP (android)
@@ -252,6 +246,9 @@
 ! sms-activate.org
 @@||sms-activate.org^
 !
+! 10086
+@@||dx.10086.cn^
+!
 ! 重返未来：1999
 @@||account.sl916.com^
 @@||account-bak.sl916.com^
@@ -272,12 +269,3 @@
 @@||optionalres-res.sl916.com^
 ! 重返未来：1999 H5活动
 @@||re.bluepoch.com^
-!
-! sogou
-||sogou.com^
-!
-! MIUI
-||resolver.msg.xiaomi.net^
-!
-! 10086
-@@||dx.10086.cn^
