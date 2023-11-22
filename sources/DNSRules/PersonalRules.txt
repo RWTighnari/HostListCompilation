@@ -120,9 +120,12 @@
 ! MITV
 ||pandora.xiaomi.com^
 ||gitv.tv^
-@@||bss.tv.mi.com^
-@@||media.ptmi.gitv.tv^
-@@||stv.ptqy.gitv.tv^
+!@@||bss.tv.mi.com^
+!@@||media.ptmi.gitv.tv^
+!@@||stv.ptqy.gitv.tv^
+@@||cp-yishijie.cdn.ptmi.gitv.tv^
+@@||filmtv.cdn.ptmi.gitv.tv^
+@@||kid.cdn.ptmi.gitv.tv^
 ! old way   [Fix]
 !||riskip.ptqy.gitv.tv^
 !||pic*.ptqy.gitv.tv^
