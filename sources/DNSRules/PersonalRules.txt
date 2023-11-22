@@ -249,6 +249,9 @@
 ! 10086
 @@||dx.10086.cn^
 !
+! mgtv123
+||ijycnd.com^$badfilter
+!
 ! 重返未来：1999
 @@||account.sl916.com^
 @@||account-bak.sl916.com^
