@@ -1,5 +1,5 @@
 ! Title : Personal AGH Rules
-! Update : 2023/10
+! Update : 2023/11
 ! 编辑规则：相同域名不空行，不同域名空1行，不同“Category”空2行。
 ! “Category”顺序：1.REGEX 2.Block 3.Purify 4.Fix
 !
