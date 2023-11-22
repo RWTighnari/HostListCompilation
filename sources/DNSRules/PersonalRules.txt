@@ -126,6 +126,10 @@
 @@||cp-yishijie.cdn.ptmi.gitv.tv^
 @@||filmtv.cdn.ptmi.gitv.tv^
 @@||kid.cdn.ptmi.gitv.tv^
+@@||videodaily.ptmi.gitv.tv^
+@@||gallery.cdn.pandora.xiaomi.com^
+@@||image.cdn.pandora.xiaomi.com^
+@@||weatherapi.market.xiaomi.com^
 ! old way   [Fix]
 !||riskip.ptqy.gitv.tv^
 !||pic*.ptqy.gitv.tv^
