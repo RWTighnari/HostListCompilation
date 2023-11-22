@@ -68,7 +68,7 @@
 ! Android's Google server connectivity check
 ||connectivitycheck.gstatic.com^$important
 ! ?
-||metric.gstatic.com^$important
+@@-ds.metric.gstatic.com^|$badfilter
 !
 ! miwifi
 ||miwifi.com^
