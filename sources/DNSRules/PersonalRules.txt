@@ -223,7 +223,13 @@
 @@||up*.jia.360.cn^
 !@@||ota*.jia.360.cn^
 ! ?
-!@@||dp.push.dc.360.cn^
+@@||sdk.live.360.cn^
+@@||video-cloudcontrol.iot.360.cn^
+@@||mdm.openapi.360.cn^
+@@||fastconn-api.iot.360.cn^
+@@||app.home.360.cn^
+@@||video-licenseauth.iot.360.cn^
+@@||dp.push.dc.360.cn^
 ! APP (android)
 @@||360.cn^$client=Dad|Mom
 ||ad.jia.360.cn^$client=Dad|Mom,important
