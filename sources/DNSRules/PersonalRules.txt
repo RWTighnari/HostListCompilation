@@ -213,7 +213,6 @@
 !
 ! bilibili
 !@@||www.snm0516.aisee.tv^
-@@||*-pcdn-*.snm0516.aisee.tv^
 ! BBDown
 @@||api.snm0516.aisee.tv^
 @@||upos-sz-mirrorcoso1.bilivideo.com^
