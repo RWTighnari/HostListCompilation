@@ -172,6 +172,8 @@
 !
 ! lanzou
 @@||developer-oss.lanzouc.com^
+@@||assets.woozooo.com^
+@@||statics.woozooo.com^
 !
 ! 123pan
 @@||www.123pan.com^
