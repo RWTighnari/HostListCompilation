@@ -82,6 +82,9 @@
 ! sogou
 ||sogou.com^
 !
+! Share
+||yuhengye.com^
+!
 !
 ! Category: Purify
 ! Baidu
