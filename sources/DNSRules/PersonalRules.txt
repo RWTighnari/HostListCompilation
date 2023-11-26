@@ -266,6 +266,9 @@
 ! mgtv123
 ||ijycnd.com^$badfilter
 !
+! 肥城港华燃气有限公司（微信公众号）
+@@||weixin.towngasvcc.com^
+!
 ! 重返未来：1999
 @@||account.sl916.com^
 @@||account-bak.sl916.com^
