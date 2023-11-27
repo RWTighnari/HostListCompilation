@@ -173,6 +173,10 @@
 ! vpsor
 @@||vpsor.cn^
 !
+! ednovas
+@@||merchant.pacypay.net^
+@@||service.95189371.cn^
+!
 ! lanzou
 @@||developer-oss.lanzouc.com^
 @@||assets.woozooo.com^
@@ -201,6 +205,8 @@
 !@@||voipfinderliveplay.wxqcloud.qq.com^$client=Mom
 ! tencent cloud
 !@@||cloud.tencent.com^
+! wechatpay
+||wechatpay.cn^$badfilter
 !
 ! xiaohongshu
 @@||fe-static.xhscdn.com^
