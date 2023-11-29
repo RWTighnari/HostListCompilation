@@ -189,10 +189,6 @@
 @@||gtm-cn-5yd3c1s2701.123pan.com^
 @@||web-pro2.cjjd18.com^
 !
-! NoActive download
-@@||media-hbsjz-fy-person.he8oss.ctyunxs.cn^
-@@||media-qhxn-person.qh4oss.xstore.ctyun.cn^
-!
 ! googleusercontent
 @@||lh3.googleusercontent.com^
 !
