@@ -263,6 +263,9 @@
 ! .space
 @@||iv.melmac.space^
 !
+! NoActive download
+@@||media-zjhz-fy-person.zj6oss.ctyunxs.cn^
+!
 ! cnblogs
 @@||www.cnblogs.com^
 !
