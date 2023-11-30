@@ -202,15 +202,32 @@
 @@||mooc*vod.stu.126.net^
 !
 ! Tencent
-! weixin HttpDNS
+! weixin
+! HttpDNS
 !||dns.qq.com^
 !||dns.weixin.qq.com^
-! weixin (?)
-!@@||voipfinderliveplay.wxqcloud.qq.com^$client=Mom
-! tencent cloud
-!@@||cloud.tencent.com^
+! 文字聊天+音视频通话 (?)
+@@||short.weixin.qq.com^
+@@||extshort.weixin.qq.com^
+@@||minorshort.weixin.qq.com^
 ! wechatpay
-||wechatpay.cn^$badfilter
+@@||pay.weixin.qq.com^
+@@||wx.tenpay.com^
+@@||tenpay.wechatpay.cn^
+@@||gtimg.wechatpay.cn^
+@@||wx.gtimg.com^
+@@||act.wechatpay.cn^
+@@||act.weixin.qq.com^
+! 小程序
+@@||open.weixin.qq.com^
+@@||res.servicewechat.com^
+! JS-SDK
+@@||res.wx.qq.com^
+@@||res2.wx.qq.com^
+! captcha
+@@||captcha.gtimg.com^
+! game
+||game.weixin.qq.com^
 !
 ! xiaohongshu
 @@||fe-static.xhscdn.com^
