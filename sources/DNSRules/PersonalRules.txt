@@ -70,14 +70,27 @@
 ! ?
 @@-ds.metric.gstatic.com^|$badfilter
 !
+! OEM
+! Xiaomi
+||mi.com^
+||xiaomi.com^
+||xiaomi.net^
+||miui.com^
+! MIUI
+!||resolver.msg.xiaomi.net^
+! 小米IoT
+@@||query-suggestion.ai.xiaomi.com^
+@@||api.io.mi.com^
 ! miwifi
 ||miwifi.com^
+! website
+@@||www.mi.com^
+@@||home.miui.com^
+@@||cia.sec.miui.com^
+@@||developers.xiaoai.mi.com^
 !
 ! ?
 ||smartont.net^
-!
-! MIUI
-||resolver.msg.xiaomi.net^
 !
 ! sogou
 ||sogou.com^
@@ -158,9 +171,11 @@
 @@||avatars.githubusercontent.com^
 @@||objects.githubusercontent.com^
 !
+! OEM
+! Apple Inc.
 ! IOS AppStore-download apps
 @@||iosapps.itunes.apple.com^
-!
+! Huawei Technologies Co., Ltd.
 ! HUAWEI/HONOR connectivity check
 !@@||connectivitycheck.platform.hicloud.com^
 @@||connectivitycheck.platform.hihonorcloud.com^
@@ -169,6 +184,34 @@
 @@||connectivitycheck-backup.platform.hihonorcloud.com^
 ! hihonorcloud
 !@@||account-drcn.platform.hihonorcloud.com^
+!
+! Tencent
+! weixin
+! HttpDNS
+!||dns.qq.com^
+!||dns.weixin.qq.com^
+! 文字聊天+音视频通话 (?)
+@@||short.weixin.qq.com^
+@@||extshort.weixin.qq.com^
+@@||minorshort.weixin.qq.com^
+! wechatpay
+@@||pay.weixin.qq.com^
+@@||wx.tenpay.com^
+@@||tenpay.wechatpay.cn^
+@@||gtimg.wechatpay.cn^
+@@||wx.gtimg.com^
+@@||act.wechatpay.cn^
+@@||act.weixin.qq.com^
+! 小程序
+@@||open.weixin.qq.com^
+@@||res.servicewechat.com^
+! JS-SDK
+@@||res.wx.qq.com^
+@@||res2.wx.qq.com^
+! captcha
+@@||captcha.gtimg.com^
+! game
+||game.weixin.qq.com^
 !
 ! vpsor
 @@||vpsor.cn^
@@ -200,34 +243,6 @@
 !
 ! 中国大学MOOC
 @@||mooc*vod.stu.126.net^
-!
-! Tencent
-! weixin
-! HttpDNS
-!||dns.qq.com^
-!||dns.weixin.qq.com^
-! 文字聊天+音视频通话 (?)
-@@||short.weixin.qq.com^
-@@||extshort.weixin.qq.com^
-@@||minorshort.weixin.qq.com^
-! wechatpay
-@@||pay.weixin.qq.com^
-@@||wx.tenpay.com^
-@@||tenpay.wechatpay.cn^
-@@||gtimg.wechatpay.cn^
-@@||wx.gtimg.com^
-@@||act.wechatpay.cn^
-@@||act.weixin.qq.com^
-! 小程序
-@@||open.weixin.qq.com^
-@@||res.servicewechat.com^
-! JS-SDK
-@@||res.wx.qq.com^
-@@||res2.wx.qq.com^
-! captcha
-@@||captcha.gtimg.com^
-! game
-||game.weixin.qq.com^
 !
 ! xiaohongshu
 @@||fe-static.xhscdn.com^
