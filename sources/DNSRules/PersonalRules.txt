@@ -81,7 +81,15 @@
 ! 小米IoT
 @@||query-suggestion.ai.xiaomi.com^
 @@||api.io.mi.com^
-@@||cloudcontrol.ai.xiaomi.com^
+!@@||cloudcontrol.ai.xiaomi.com^
+! Xiaoai AI Yinxiang - multimedia
+@@||live.ximalaya.com^
+@@||imagev2.xmcdn.com^
+@@||broadcast.tx.xmcdn.com^
+@@||pic.qtfm.cn^
+@@||open.ls.qingting.fm^
+@@||isure6-stream-qqmusic.a.bdycdn.cn^
+@@||y.gtimg.cn^
 ! miwifi
 ||miwifi.com^
 ! website
@@ -251,20 +259,11 @@
 @@||fe-video-qc.xhscdn.com^
 @@||picasso-static.xiaohongshu.com^
 !
-! Xiaoai AI Yinxiang - multimedia
-@@||live.ximalaya.com^
-@@||imagev2.xmcdn.com^
-@@||broadcast.tx.xmcdn.com^
-@@||pic.qtfm.cn^
-@@||open.ls.qingting.fm^
-@@||isure6-stream-qqmusic.a.bdycdn.cn^
-@@||y.gtimg.cn^
-!
 ! bilibili
 !@@||www.snm0516.aisee.tv^
 ! BBDown
-@@||api.snm0516.aisee.tv^
-@@||upos-sz-mirrorcoso1.bilivideo.com^
+!@@||api.snm0516.aisee.tv^
+!@@||upos-sz-mirrorcoso1.bilivideo.com^
 !
 ! 360 smart camera
 @@||q*.jia.360.cn^
