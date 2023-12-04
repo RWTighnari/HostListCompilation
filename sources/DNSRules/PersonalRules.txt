@@ -81,6 +81,7 @@
 ! 小米IoT
 @@||query-suggestion.ai.xiaomi.com^
 @@||api.io.mi.com^
+@@||cloudcontrol.ai.xiaomi.com^
 ! miwifi
 ||miwifi.com^
 ! website
@@ -88,6 +89,7 @@
 @@||home.miui.com^
 @@||cia.sec.miui.com^
 @@||developers.xiaoai.mi.com^
+@@||trust.mi.com^
 !
 ! ?
 ||smartont.net^
