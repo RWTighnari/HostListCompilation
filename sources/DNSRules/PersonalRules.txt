@@ -260,10 +260,13 @@
 @@||picasso-static.xiaohongshu.com^
 !
 ! bilibili
+@@||s1.hdslb.com^
+@@||static.hdslb.com^
+@@||backup.hdslb.com^
 !@@||www.snm0516.aisee.tv^
 ! BBDown
-!@@||api.snm0516.aisee.tv^
-!@@||upos-sz-mirrorcoso1.bilivideo.com^
+@@||api.snm0516.aisee.tv^
+@@||upos-sz-mirrorcoso1.bilivideo.com^
 !
 ! 360 smart camera
 @@||q*.jia.360.cn^
