@@ -177,9 +177,14 @@
 !
 ! GitHub
 @@||raw.githubusercontent.com^
+@@||objects.githubusercontent.com^
 @@||actions.githubusercontent.com^
 @@||avatars.githubusercontent.com^
-@@||objects.githubusercontent.com^
+@@||camo.githubusercontent.com^
+@@||user-images.githubusercontent.com^
+!
+! DuckDuckGo
+@@||external-content.duckduckgo.com^
 !
 ! OEM
 ! Apple Inc.
