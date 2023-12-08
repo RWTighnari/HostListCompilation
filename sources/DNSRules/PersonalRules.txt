@@ -203,6 +203,9 @@
 ! hihonorcloud
 !@@||account-drcn.platform.hihonorcloud.com^
 !
+! OKX
+@@||www.okx.com^
+!
 ! Tencent
 ! weixin
 ! HttpDNS
