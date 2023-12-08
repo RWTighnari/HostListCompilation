@@ -183,6 +183,9 @@
 @@||camo.githubusercontent.com^
 @@||user-images.githubusercontent.com^
 !
+! Visual Studio
+@@||marketplace.visualstudio.com^
+!
 ! DuckDuckGo
 @@||external-content.duckduckgo.com^
 !
