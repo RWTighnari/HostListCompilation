@@ -79,6 +79,7 @@
 ! MIUI
 !||resolver.msg.xiaomi.net^
 ! 小米IoT
+@@||api2.mina.mi.com^
 @@||query-suggestion.ai.xiaomi.com^
 @@||api.io.mi.com^
 !@@||cloudcontrol.ai.xiaomi.com^
