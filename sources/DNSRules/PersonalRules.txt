@@ -367,23 +367,23 @@
 ! 肥城港华燃气有限公司（微信公众号）
 @@||weixin.towngasvcc.com^
 !
-! 重返未来：1999
-@@||account.sl916.com^
-@@||account-bak.sl916.com^
-@@||notice.sl916.com^
-@@||notice-res.sl916.com^
-@@||gamesdk.sl916.com^
-@@||gamesdk-bak.sl916.com^
-! @@||ssgamesdk-hotupdate.sl916.com^
-@@||game-re-service.sl916.com^
-@@||game-re-service-bak.sl916.com^
-@@||d.bluepoch.com^
-@@||hotupdate.sl916.com^
-@@||hotupdate-bak.sl916.com^
-@@||hotupdate-res.sl916.com^
-@@||hotupdate-res-bak.sl916.com^
-@@||optionalres.sl916.com^
-@@||optionalres-bak.sl916.com^
-@@||optionalres-res.sl916.com^
-! 重返未来：1999 H5活动
-@@||re.bluepoch.com^
+!! 重返未来：1999
+!@@||account.sl916.com^
+!@@||account-bak.sl916.com^
+!@@||notice.sl916.com^
+!@@||notice-res.sl916.com^
+!@@||gamesdk.sl916.com^
+!@@||gamesdk-bak.sl916.com^
+!! @@||ssgamesdk-hotupdate.sl916.com^
+!@@||game-re-service.sl916.com^
+!@@||game-re-service-bak.sl916.com^
+!@@||d.bluepoch.com^
+!@@||hotupdate.sl916.com^
+!@@||hotupdate-bak.sl916.com^
+!@@||hotupdate-res.sl916.com^
+!@@||hotupdate-res-bak.sl916.com^
+!@@||optionalres.sl916.com^
+!@@||optionalres-bak.sl916.com^
+!@@||optionalres-res.sl916.com^
+!! 重返未来：1999 H5活动
+!@@||re.bluepoch.com^
