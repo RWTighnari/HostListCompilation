@@ -79,11 +79,23 @@
 ||miui.com^
 ! MIUI
 !||resolver.msg.xiaomi.net^
+!@@||client.sms.miui.com^
 ! 小米IoT
 @@||api2.mina.mi.com^
 @@||query-suggestion.ai.xiaomi.com^
 @@||api.io.mi.com^
 !@@||cloudcontrol.ai.xiaomi.com^
+! ?
+@@||account.xiaomi.com^
+@@||account.ai.xiaomi.com^
+@@||userprofile.mina.mi.com^
+@@||find.api.micloud.xiaomi.net^
+@@||weather.sys.tv.mi.com^
+@@||cdn.cnbj1.fds.api.mi-img.com^
+! ???!!!
+@@||dlg.io.mi.com^
+@@||ot.io.mi.com^
+@@||ots.io.mi.com^
 ! Xiaoai AI Yinxiang - multimedia
 @@||live.ximalaya.com^
 @@||imagev2.xmcdn.com^
@@ -100,6 +112,20 @@
 @@||cia.sec.miui.com^
 @@||developers.xiaoai.mi.com^
 @@||trust.mi.com^
+! https://github.com/unknownFalleN/xiaomi-dns-blocklist
+! Whitelist
+! Xiaomi account management
+@@||account.xiaomi.com^
+! System app updater
+@@||global.market.xiaomi.com^
+! Find my Device
+@@||us.find.api.micloud.xiaomi.net^
+@@||account.xiaomi.com^
+@@||find.api.micloud.xiaomi.net^
+! Updates of the Firmware
+@@||update.miui.com^
+@@||update.intl.miui.com^
+@@||api.io.mi.com^
 !
 ! ?
 ||smartont.net^
@@ -150,13 +176,15 @@
 !@@||bss.tv.mi.com^
 !@@||media.ptmi.gitv.tv^
 !@@||stv.ptqy.gitv.tv^
+!@@||upgrade.ptmi.gitv.tv^
+@@||gallery.cdn.pandora.xiaomi.com^
+@@||image.cdn.pandora.xiaomi.com^
+@@||weatherapi.market.xiaomi.com^
 @@||cp-yishijie.cdn.ptmi.gitv.tv^
 @@||filmtv.cdn.ptmi.gitv.tv^
 @@||kid.cdn.ptmi.gitv.tv^
 @@||videodaily.ptmi.gitv.tv^
-@@||gallery.cdn.pandora.xiaomi.com^
-@@||image.cdn.pandora.xiaomi.com^
-@@||weatherapi.market.xiaomi.com^
+@@||static.ptqy.gitv.tv^
 ! old way   [Fix]
 !||riskip.ptqy.gitv.tv^
 !||pic*.ptqy.gitv.tv^
