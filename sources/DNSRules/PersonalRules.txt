@@ -207,9 +207,13 @@
 !
 ! OKX
 @@||www.okx.com^
-@@||ouyich.biz^
+@@||static.okx.com^
+@@||www.ouyich.biz^
+@@||wspri.ouyich.biz^
 @@||*-oss-*.ronghub.com^
-@@||www.okx-dns*.com^
+@@||static.coinall.ltd^
+@@||jpush.coinall.ltd^
+@@||okx-dns*.com^
 !
 ! Tencent
 ! weixin
