@@ -207,8 +207,9 @@
 !
 ! OKX
 @@||www.okx.com^
-@@||www.okx-dns*.com^
+@@||ouyich.biz^
 @@||*-oss-*.ronghub.com^
+@@||www.okx-dns*.com^
 !
 ! Tencent
 ! weixin
