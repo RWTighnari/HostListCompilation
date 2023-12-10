@@ -90,7 +90,6 @@
 @@||account.ai.xiaomi.com^
 @@||userprofile.mina.mi.com^
 @@||find.api.micloud.xiaomi.net^
-@@||weather.sys.tv.mi.com^
 @@||cdn.cnbj1.fds.api.mi-img.com^
 ! ???!!!
 @@||dlg.io.mi.com^
@@ -179,6 +178,7 @@
 !@@||upgrade.ptmi.gitv.tv^
 @@||gallery.cdn.pandora.xiaomi.com^
 @@||image.cdn.pandora.xiaomi.com^
+@@||weather.sys.tv.mi.com^
 @@||weatherapi.market.xiaomi.com^
 @@||cp-yishijie.cdn.ptmi.gitv.tv^
 @@||filmtv.cdn.ptmi.gitv.tv^
