@@ -58,6 +58,7 @@
 !
 ! Category: Block
 ! Qualcomm Technologies, Inc. (XTRA & IZat)   [REGEX]
+! Qualcomm GNSS Assistance Service - Tracker
 ||izatcloud.net^$important
 ! xtra-daemon
 ||xtracloud.net^$important
@@ -206,6 +207,7 @@
 !
 ! OKX
 @@||www.okx.com^
+@@||www.okx-dns*.com^
 !
 ! Tencent
 ! weixin
