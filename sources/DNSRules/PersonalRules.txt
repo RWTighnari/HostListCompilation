@@ -183,7 +183,7 @@
 @@||actions.githubusercontent.com^
 @@||avatars.githubusercontent.com^
 @@||camo.githubusercontent.com^
-@@||user-images.githubusercontent.com^
+@@||*user-images.githubusercontent.com^
 !
 ! Visual Studio
 @@||marketplace.visualstudio.com^
