@@ -82,8 +82,10 @@
 !@@||client.sms.miui.com^
 ! 小米IoT
 @@||api2.mina.mi.com^
+@@||api.ai.xiaomi.com^
 @@||query-suggestion.ai.xiaomi.com^
 @@||api.io.mi.com^
+@@||access.speech.ai.xiaomi.com^
 !@@||cloudcontrol.ai.xiaomi.com^
 ! ?
 @@||account.xiaomi.com^
