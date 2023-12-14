@@ -11,7 +11,7 @@
     },
     {
       "name": "Personal AGH Rules",
-      "source": "src/DNSRules/PersonalRules.txt",
+      "source": "https://raw.githubusercontent.com/RWTighnari/AGHRules/main/PersonalRules.txt",
       "type": "adblock"
     },
     {

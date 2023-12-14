@@ -37,8 +37,22 @@ jobs:
         run: npm i -g @adguard/hostlist-compiler
 
       # Build a configurable blocklist from multiple sources
-      - name: Build a blocklist
-        run: hostlist-compiler -c "configuration/DNSRules/configuration.json" -o "output/DNSRules/output.txt"
+      - name: Build a blocklist - 0
+        run: hostlist-compiler -c "configuration/DNSRules/configuration0.json" -o "output/DNSRules/temp0.txt"
+
+      # Remove duplicate rows
+      - name: Remove duplicate rows
+        run: bash src/script/sed.sh
+
+      # Build a configurable blocklist
+      - name: Build a blocklist - 1
+        run: hostlist-compiler -c "configuration/DNSRules/configuration1.json" -o "output/DNSRules/output.txt"
+
+      # Remove temporary files
+      - name: Remove temporary files
+        run: |
+          rm output/DNSRules/temp0.txt
+          rm output/DNSRules/temp1.txt
 
       # sort
       - uses: actions/setup-python@main

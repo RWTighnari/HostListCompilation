@@ -5,19 +5,21 @@
   "license": "AGPL-3.0",
   "sources": [
     {
-      "name": "HC REGEX LIST",
-      "source": "https://raw.githubusercontent.com/hacamer/AGHRules/main/regex.txt",
-      "type": "adblock"
-    },
-    {
-      "name": "Personal AGH Rules",
-      "source": "src/DNSRules/PersonalRules.txt",
-      "type": "adblock"
-    },
-    {
       "name": "AdGuard DNS filter",
       "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
       "type": "adblock"
+    },
+    {
+      "name": "EasyPrivacy",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers.txt",
+      "type": "adblock",
+      "transformations": ["RemoveModifiers"]
+    },
+    {
+      "name": "EasyPrivacy — international trackers",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers_international.txt",
+      "type": "adblock",
+      "transformations": ["RemoveModifiers"]
     },
     {
       "name": "CHN: AdRules DNS List",
