@@ -71,28 +71,44 @@
 ! ?
 @@-ds.metric.gstatic.com^|$badfilter
 !
+! ?
+||smartont.net^
+!
+! sogou
+||sogou.com^
+!
+! Share
+||yuhengye.com^
+!
+!
+! Category: Purify
 ! OEM
 ! Xiaomi
 ||mi.com^
 ||xiaomi.com^
 ||xiaomi.net^
 ||miui.com^
+@@||account.xiaomi.com^
 ! MIUI
 !||resolver.msg.xiaomi.net^
 !@@||client.sms.miui.com^
 ! 小米IoT
-@@||api2.mina.mi.com^
-@@||api.ai.xiaomi.com^
-@@||query-suggestion.ai.xiaomi.com^
+@@||api.speaker.xiaomi.com^
 @@||api.io.mi.com^
-@@||access.speech.ai.xiaomi.com^
-!@@||cloudcontrol.ai.xiaomi.com^
-! ?
-@@||account.xiaomi.com^
+@@||api2.mina.mi.com^
+!@@||idm.iot.mi.com^
 @@||account.ai.xiaomi.com^
+@@||display.api.mina.mi.com^
+@@||music.mina.mi.com^
+@@||access.speech.ai.xiaomi.com^
+@@||api.ai.xiaomi.com^
+! may
+@@||cloudcontrol.ai.xiaomi.com^
+@@||account-dcm.ai.xiaomi.com^
+! may
+@@||query-suggestion.ai.xiaomi.com^
 @@||userprofile.mina.mi.com^
-@@||find.api.micloud.xiaomi.net^
-@@||cdn.cnbj1.fds.api.mi-img.com^
+@@||resource.ai.xiaomi.com^
 ! ???!!!
 @@||dlg.io.mi.com^
 @@||ot.io.mi.com^
@@ -105,6 +121,9 @@
 @@||open.ls.qingting.fm^
 @@||isure6-stream-qqmusic.a.bdycdn.cn^
 @@||y.gtimg.cn^
+! ?
+@@||find.api.micloud.xiaomi.net^
+@@||cdn.cnbj1.fds.api.mi-img.com^
 ! miwifi
 ||miwifi.com^
 ! website
@@ -128,17 +147,6 @@
 @@||update.intl.miui.com^
 @@||api.io.mi.com^
 !
-! ?
-||smartont.net^
-!
-! sogou
-||sogou.com^
-!
-! Share
-||yuhengye.com^
-!
-!
-! Category: Purify
 ! Baidu
 ||baidu.com^
 @@||www.baidu.com^

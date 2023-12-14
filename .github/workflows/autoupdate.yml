@@ -6,7 +6,7 @@ name: Update Rules
 on:
   schedule:
   # - cron: '0 0/6 * * *'
-    - cron: '0 11 * * *'
+    - cron: '0 */8 * * *'
 
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
@@ -39,6 +39,12 @@ jobs:
       # Build a configurable blocklist from multiple sources
       - name: Build a blocklist
         run: hostlist-compiler -c "configuration/DNSRules/configuration.json" -o "output/DNSRules/output.txt"
+
+      # sort
+      - uses: actions/setup-python@main
+        with:
+          python-version: '3.x'
+      - run: python src/script/sort.py output/DNSRules/output.txt
 
       # Upload the generated file via "Upload-Artifact".
       - uses: actions/upload-artifact@main
@@ -91,6 +97,12 @@ jobs:
   #     # Build a configurable blocklist from multiple sources
   #     - name: Build a blocklist
   #       run: hostlist-compiler -c "configuration/DNSRulesOptimized/configuration.json" -o "output/DNSRulesOptimized/output.txt"
+
+      # # sort
+      # - uses: actions/setup-python@main
+      #   with:
+      #     python-version: '3.x'
+      # - run: python src/script/sort.py output/DNSRulesOptimized/output.txt
 
   #     # Upload the generated file via "Upload-Artifact".
   #     - uses: actions/upload-artifact@main

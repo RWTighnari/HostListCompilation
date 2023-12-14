@@ -11,7 +11,7 @@
     },
     {
       "name": "Personal AGH Rules",
-      "source": "sources/DNSRules/PersonalRules.txt",
+      "source": "src/DNSRules/PersonalRules.txt",
       "type": "adblock"
     },
     {
