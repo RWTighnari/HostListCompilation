@@ -1,0 +1,399 @@
+! Title : Personal AGH Rules
+! Update : 2023/12
+! 编辑规则：相同域名不空行，不同域名空1行，不同“Category”空2行。
+! “Category”顺序：1.REGEX 2.Block 3.Purify 4.Fix
+!
+! Upstream DNS servers備份：
+! https://dns11.quad9.net/dns-query
+! https://family.adguard-dns.com/dns-query
+! tls://family.adguard-dns.com
+! quic://family.adguard-dns.com
+! sdns://AQMAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ
+! Bootstrap DNS servers:
+! 9.9.9.10
+! 149.112.112.10
+! 2620:fe::10
+! 2620:fe::fe:10
+! Fix Quad9 dns11
+@@||dns11.quad9.net^$important
+! Fix Google Public DNS
+@@||dns.google^$important
+! Fix tunnelbroker.net
+@@||tunnelbroker.net^$important
+! Fix fcyz.work
+@@||fcyz.work^$important
+!
+!
+! Category: REGEX
+! kill all domains that contain "click/track/analytics/adservice(s)/dns/ad(s)"
+/izat/
+/xtra/
+/beacon/
+/otheve/
+/click/
+/collect/
+/connect/
+/consent/
+/contact/
+/content/
+/cookie/
+/market/
+/trac/
+/analytics/
+/adservice/
+/metric/
+/measure/
+/telemetr/
+! https://adblockplus.org/zh_CN/faq_basics
+/adv(?!ice)/
+||dns.*^$dnsrewrite=NXDOMAIN
+||doh.*^$dnsrewrite=NXDOMAIN
+||dot.*^$dnsrewrite=NXDOMAIN
+||httpdns.*^$dnsrewrite=NXDOMAIN
+||httpsdns.*^$dnsrewrite=NXDOMAIN
+||bytedns1.*^$dnsrewrite=NXDOMAIN
+||ads.*^
+||duckdns.*^
+!
+!
+! Category: Block
+! Qualcomm Technologies, Inc. (XTRA & IZat)   [REGEX]
+! Qualcomm GNSS Assistance Service - Tracker
+||izatcloud.net^$important
+! xtra-daemon
+||xtracloud.net^$important
+!
+! Google
+! According to Google, the host android.clients.google.com serves the Google Play Store for periodical device registration, location, search for apps and many other functions.
+!||android.clients.google.com^$important
+! Android's Google server connectivity check
+||connectivitycheck.gstatic.com^$important
+! ?
+@@-ds.metric.gstatic.com^|$badfilter
+!
+! ?
+||smartont.net^
+!
+! sogou
+||sogou.com^
+!
+! Share
+||yuhengye.com^
+!
+!
+! Category: Purify
+! OEM
+! Xiaomi
+||mi.com^
+||xiaomi.com^
+||xiaomi.net^
+||miui.com^
+@@||account.xiaomi.com^
+! MIUI
+!||resolver.msg.xiaomi.net^
+!@@||client.sms.miui.com^
+! 小米IoT
+@@||api.speaker.xiaomi.com^
+@@||api.io.mi.com^
+@@||api2.mina.mi.com^
+!@@||idm.iot.mi.com^
+@@||account.ai.xiaomi.com^
+@@||display.api.mina.mi.com^
+@@||music.mina.mi.com^
+@@||access.speech.ai.xiaomi.com^
+@@||api.ai.xiaomi.com^
+! may
+@@||cloudcontrol.ai.xiaomi.com^
+@@||account-dcm.ai.xiaomi.com^
+! may
+@@||query-suggestion.ai.xiaomi.com^
+@@||userprofile.mina.mi.com^
+@@||resource.ai.xiaomi.com^
+! ???!!!
+@@||dlg.io.mi.com^
+@@||ot.io.mi.com^
+@@||ots.io.mi.com^
+! Xiaoai AI Yinxiang - multimedia
+@@||live.ximalaya.com^
+@@||imagev2.xmcdn.com^
+@@||broadcast.tx.xmcdn.com^
+@@||pic.qtfm.cn^
+@@||open.ls.qingting.fm^
+@@||isure6-stream-qqmusic.a.bdycdn.cn^
+@@||y.gtimg.cn^
+! ?
+@@||find.api.micloud.xiaomi.net^
+@@||cdn.cnbj1.fds.api.mi-img.com^
+! miwifi
+||miwifi.com^
+! website
+@@||www.mi.com^
+@@||home.miui.com^
+@@||cia.sec.miui.com^
+@@||developers.xiaoai.mi.com^
+@@||trust.mi.com^
+! https://github.com/unknownFalleN/xiaomi-dns-blocklist
+! Whitelist
+! Xiaomi account management
+@@||account.xiaomi.com^
+! System app updater
+@@||global.market.xiaomi.com^
+! Find my Device
+@@||us.find.api.micloud.xiaomi.net^
+@@||account.xiaomi.com^
+@@||find.api.micloud.xiaomi.net^
+! Updates of the Firmware
+@@||update.miui.com^
+@@||update.intl.miui.com^
+@@||api.io.mi.com^
+!
+! Baidu
+||baidu.com^
+@@||www.baidu.com^
+@@||passport.baidu.com^
+@@||wappass.baidu.com^
+@@||baike.baidu.com^
+@@||jingyan.baidu.com^
+@@||zhidao.baidu.com^
+@@||pan.baidu.com^
+@@||wenku.baidu.com^
+@@||tieba.baidu.com^
+@@||quantum-hub.baidu.com^
+!
+! zhihu(zhihu question & zhuanlan)
+||zhihu.com^
+@@||www.zhihu.com^
+@@||zhuanlan.zhihu.com^
+@@||static.zhihu.com^
+@@||zhimg.com^
+@@||link.zhihu.com^
+!
+! 什么值得买(include WAP fix)
+||smzdm.com^
+@@||post.smzdm.com^
+@@||post.m.smzdm.com^
+!
+! CSDN blog
+||csdn.net^
+||csdnimg.cn^
+@@||blog.csdn.net^
+@@||img-blog.csdnimg.cn^
+!
+! MITV
+||pandora.xiaomi.com^
+||gitv.tv^
+!@@||bss.tv.mi.com^
+!@@||media.ptmi.gitv.tv^
+!@@||stv.ptqy.gitv.tv^
+!@@||upgrade.ptmi.gitv.tv^
+@@||gallery.cdn.pandora.xiaomi.com^
+@@||image.cdn.pandora.xiaomi.com^
+@@||weather.sys.tv.mi.com^
+@@||weatherapi.market.xiaomi.com^
+@@||cp-yishijie.cdn.ptmi.gitv.tv^
+@@||filmtv.cdn.ptmi.gitv.tv^
+@@||kid.cdn.ptmi.gitv.tv^
+@@||videodaily.ptmi.gitv.tv^
+@@||static.ptqy.gitv.tv^
+! old way   [Fix]
+!||riskip.ptqy.gitv.tv^
+!||pic*.ptqy.gitv.tv^
+!||pic*.inter.ptqy.gitv.tv^
+!||preimage*.inter.ptqy.gitv.tv^
+!||data.video.ptqy.gitv.tv^
+!||subscription.ptqy.gitv.tv^
+!||wechat.ptqy.gitv.tv^
+||static-s.iqiyi.com^
+!||static-s.ptqy.gitv.tv^
+||iface*.iqiyi.com^
+!
+!
+! Category: Fix
+! e Foundation
+@@||e.foundation^$important
+@@||ecloud.global^$important
+@@||murena.com^$important
+@@||murena.io^$important
+!
+! GitHub
+@@||raw.githubusercontent.com^
+@@||objects.githubusercontent.com^
+@@||actions.githubusercontent.com^
+@@||avatars.githubusercontent.com^
+@@||camo.githubusercontent.com^
+@@||*user-images.githubusercontent.com^
+!
+! Visual Studio
+@@||marketplace.visualstudio.com^
+!
+! DuckDuckGo
+@@||external-content.duckduckgo.com^
+!
+! OEM
+! Apple Inc.
+! IOS AppStore-download apps
+@@||iosapps.itunes.apple.com^
+! Huawei Technologies Co., Ltd.
+! HUAWEI/HONOR connectivity check
+!@@||connectivitycheck.platform.hicloud.com^
+@@||connectivitycheck.platform.hihonorcloud.com^
+!@@||connectivitycheck.platform.dbankcloud.com^
+!@@||stdm-drcn.platform.hicloud.com^
+@@||connectivitycheck-backup.platform.hihonorcloud.com^
+! hihonorcloud
+!@@||account-drcn.platform.hihonorcloud.com^
+!
+! OKX
+@@||www.okx.com^
+@@||static.okx.com^
+@@||www.ouyich.biz^
+@@||wspri.ouyich.biz^
+@@||wsdexpri.ouyich.biz^
+@@||*-oss-*.ronghub.com^
+@@||static.coinall.ltd^
+@@||jpush.coinall.ltd^
+@@||okx-dns*.com^
+!
+! Tencent
+! weixin
+! HttpDNS
+!||dns.qq.com^
+!||dns.weixin.qq.com^
+! 文字聊天+音视频通话 (?)
+@@||short.weixin.qq.com^
+@@||extshort.weixin.qq.com^
+@@||minorshort.weixin.qq.com^
+! wechatpay
+@@||pay.weixin.qq.com^
+@@||wx.tenpay.com^
+@@||tenpay.wechatpay.cn^
+@@||gtimg.wechatpay.cn^
+@@||wx.gtimg.com^
+@@||act.wechatpay.cn^
+@@||act.weixin.qq.com^
+! 小程序
+@@||open.weixin.qq.com^
+@@||res.servicewechat.com^
+! JS-SDK
+@@||res.wx.qq.com^
+@@||res2.wx.qq.com^
+! captcha
+@@||captcha.gtimg.com^
+! game
+||game.weixin.qq.com^
+!
+! vpsor
+@@||vpsor.cn^
+!
+! ednovas
+! pay
+@@||merchant.pacypay.net^
+@@||service.95189371.cn^
+!
+! lanzou
+@@||developer-oss.lanzouc.com^
+@@||assets.woozooo.com^
+@@||statics.woozooo.com^
+!
+! 123pan
+@@||www.123pan.com^
+@@||statics.123pan.com^
+@@||gtm-cn-5yd3c1s2701.123pan.com^
+@@||web-pro2.cjjd18.com^
+!
+! googleusercontent
+@@||lh3.googleusercontent.com^
+!
+! renminribao app
+@@||peopleapp.com^$client=Dad|Grandpa
+!
+! xuexiqiangguo
+@@||xuexi.cn^$client=Dad|Grandpa
+!
+! 中国大学MOOC
+@@||mooc*vod.stu.126.net^
+!
+! xiaohongshu
+@@||fe-static.xhscdn.com^
+@@||fe-video-qc.xhscdn.com^
+@@||picasso-static.xiaohongshu.com^
+!
+! bilibili
+@@||s1.hdslb.com^
+@@||static.hdslb.com^
+@@||backup.hdslb.com^
+!@@||www.snm0516.aisee.tv^
+! BBDown
+@@||api.snm0516.aisee.tv^
+@@||upos-sz-mirrorcoso1.bilivideo.com^
+!
+! 360 smart camera
+@@||q*.jia.360.cn^
+@@||up*.jia.360.cn^
+!@@||ota*.jia.360.cn^
+! ?
+@@||sdk.live.360.cn^
+@@||video-cloudcontrol.iot.360.cn^
+@@||mdm.openapi.360.cn^
+@@||fastconn-api.iot.360.cn^
+@@||app.home.360.cn^
+@@||video-licenseauth.iot.360.cn^
+@@||dp.push.dc.360.cn^
+! APP (android)
+@@||360.cn^$client=Dad|Mom
+||ad.jia.360.cn^$client=Dad|Mom,important
+||ad.life.360.cn^$client=Dad|Mom,important
+||commercial.shouji.360.cn^$client=Dad|Mom,important
+||strategy.shouji.360.cn^$client=Dad|Mom,important
+@@||xstore.qihu.com^$client=Dad|Mom
+!
+! flatpak install flathub com.baidu.NetDisk
+!@@||issuepcdn.baidupcs.com^
+!
+! .top
+@@||adrules.top^
+@@||blog.clarkqwq.top^
+@@||www.skira.top^
+@@||tianli0.top^
+@@||shakaianee.top^
+@@||qinlili.bid^
+@@||bzmshang.top^
+@@||luoling8192.top^
+! .space
+@@||iv.melmac.space^
+!
+! cnblogs
+@@||www.cnblogs.com^
+!
+! sms-activate.org
+@@||sms-activate.org^
+!
+! 10086
+@@||dx.10086.cn^
+!
+! mgtv123
+||ijycnd.com^$badfilter
+!
+! 肥城港华燃气有限公司（微信公众号）
+@@||weixin.towngasvcc.com^
+!
+!! 重返未来：1999
+!@@||account.sl916.com^
+!@@||account-bak.sl916.com^
+!@@||notice.sl916.com^
+!@@||notice-res.sl916.com^
+!@@||gamesdk.sl916.com^
+!@@||gamesdk-bak.sl916.com^
+!! @@||ssgamesdk-hotupdate.sl916.com^
+!@@||game-re-service.sl916.com^
+!@@||game-re-service-bak.sl916.com^
+!@@||d.bluepoch.com^
+!@@||hotupdate.sl916.com^
+!@@||hotupdate-bak.sl916.com^
+!@@||hotupdate-res.sl916.com^
+!@@||hotupdate-res-bak.sl916.com^
+!@@||optionalres.sl916.com^
+!@@||optionalres-bak.sl916.com^
+!@@||optionalres-res.sl916.com^
+!! 重返未来：1999 H5活动
+!@@||re.bluepoch.com^

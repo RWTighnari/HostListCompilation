@@ -1,0 +1,83 @@
+{
+  "name": "DNS Rules",
+  "description": "A extreme aggressive & restrictive filter compiled from multiple sources",
+  "homepage": "https://github.com/RWTighnari/HostListCompilation",
+  "license": "AGPL-3.0",
+  "sources": [
+    {
+      "name": "AdGuard DNS filter",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "EasyPrivacy",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers.txt",
+      "type": "adblock",
+      "transformations": ["RemoveModifiers"]
+    },
+    {
+      "name": "EasyPrivacy — international trackers",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers_international.txt",
+      "type": "adblock",
+      "transformations": ["RemoveModifiers"]
+    },
+    {
+      "name": "CHN: AdRules DNS List",
+      "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "NEO DEV HOST",
+      "source": "https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
+      "type": "adblock"
+    },
+    {
+      "name": "1024_hosts",
+      "source": "https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts",
+      "type": "hosts"
+    },
+    {
+      "name": "1Hosts (Xtra)",
+      "source": "https://o0.pages.dev/Xtra/adblock.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Ultimate",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Encrypted DNS Servers only",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Dynamic DNS blocking",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Badware Hoster blocking",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "DNS Blocklists - Most Abused TLDs",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "OISD Blocklist Big",
+      "source": "https://big.oisd.nl",
+      "type": "adblock"
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Compress",
+    "Deduplicate",
+    "RemoveEmptyLines",
+    "TrimLines",
+    "InsertFinalNewLine"
+  ]
+}

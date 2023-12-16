@@ -1,0 +1,31 @@
+{
+  "name": "DNS Rules (Optimized)",
+  "description": "A extreme aggressive & restrictive filter compiled from multiple sources",
+  "homepage": "https://github.com/RWTighnari/HostListCompilation",
+  "license": "AGPL-3.0",
+  "sources": [
+    {
+      "name": "HC REGEX LIST",
+      "source": "https://raw.githubusercontent.com/hacamer/AGHRules/main/regex.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "Personal AGH Rules",
+      "source": "https://raw.githubusercontent.com/RWTighnari/AGHRules/main/PersonalRules.txt",
+      "type": "adblock"
+    },
+    {
+      "name": "AdGuard DNS filter",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
+      "type": "adblock"
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Compress",
+    "Deduplicate",
+    "RemoveEmptyLines",
+    "TrimLines",
+    "InsertFinalNewLine"
+  ]
+}

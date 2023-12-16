@@ -1,0 +1,51 @@
+{
+    "name": "Content Rules",
+    "description": "A extreme aggressive & restrictive filter compiled from multiple sources",
+    "homepage": "https://github.com/RWTighnari/HostListCompilation",
+    "license": "AGPL-3.0",
+    "sources": [
+        {
+            "name": "AdGuard Base filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard URL Tracking filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "Legitimate URL Shortener",
+            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Tracking Protection filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Annoyances filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdGuard Chinese filter",
+            "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
+            "type": "adblock"
+        },
+        {
+            "name": "AdRules AdBlock List Lite",
+            "source": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt",
+            "type": "adblock"
+        }
+    ],
+    "transformations": [
+        "RemoveComments",
+        "Compress",
+        "Deduplicate",
+        "RemoveEmptyLines",
+        "TrimLines",
+        "InsertFinalNewLine"
+    ]
+}
